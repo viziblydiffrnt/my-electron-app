@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Electron App</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/photon.css">
+    <link rel="stylesheet" href="../node_modules/jquery-confirm/dist/jquery-confirm.min.css">
+  </head>
+  <body>
+    <div class="window">
+      <!-- .toolbar-header sits at the top of your app -->
+      <header class="toolbar toolbar-header">
+          <div class="toolbar-actions" style="text-align:center;">
+            <div class="btn-group">
+              <button class="btn btn-large btn-default" id="home2">
+                <span class="icon icon-home "></span>
+              </button>
+              <button class="btn btn-large btn-default" id="cfg2">
+                <span class="icon icon-cog"></span>
+              </button>
+            </div>
+          </div>
+      </header>
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content">
+        <div class="pane-group">
+          <div class="pane pane-sm sidebar">
+            <nav class="nav-group">
+              <center><img src="../images/avatar.png" ></center>
+              <span class="nav-group-item">
+                <a href="#" id="home" style="text-decoration:none">Home
+                  <span class="icon icon-home"></span>
+              </a>
+              </span>
+              <span class="nav-group-item">
+                <a href="#" id="cfg" style="text-decoration:none">Configure
+                  <span class="icon icon-cog"></span>
+              </a>
+              </span>
+            </nav>
+          </div>
+          <div class="pane">
+            <div id="main"></div>
+          </div>
+        </div>
+      </div>
+      <footer class="toolbar toolbar-footer">
+        <h1 class="title">Developed by Mark Jacobson</h1>
+      </footer>
+    </div>
+  </body>
+  <!-- Javascript -->
+  <script>window.$ = window.jQuery = require('../node_modules/jquery/dist/jquery.min.js');</script>
+  <script src="../node_modules/jquery-confirm/dist/jquery-confirm.min.js"></script>
+  <!-- <script src="js/menu.js" charset="utf-8"></script> -->
+  <script src="js/nav.js" charset="utf-8"></script>
+  <!-- <script src="js/check_setup.js" charset="utf-8"></script> -->
+</html>
