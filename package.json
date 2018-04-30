@@ -10,12 +10,10 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint src --color"
-    ,"postinstall": "virtualenv-postinstall"
+    "lint": "eslint src --color",
+    "postinstall": "virtualenv-postinstall"
   },
-  "keywords": [
-    
-  ],
+  "keywords": [],
   "author": "Mark Jacobson",
   "license": "MIT",
   "config": {
@@ -38,12 +36,8 @@
       "electronWinstallerConfig": {
         "name": "my-electron-app"
       },
-      "electronInstallerDebian": {
-        
-      },
-      "electronInstallerRedhat": {
-        
-      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
       "github_repository": {
         "owner": "",
         "name": ""
